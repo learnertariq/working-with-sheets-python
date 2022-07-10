@@ -13,13 +13,17 @@ print(wb.sheetnames)
 
 # Accessing an individual cell or a range of cells
 # passing coordinate of a cell
-cell = sheet['A1'] 
+# cell = sheet['A1'] 
 # changing the value of a cell
 # cell.value = "id"
-print(cell.value)
+# print(cell.value)
 # printing row, column and coordinate info
-print(cell.row)
-print(cell.column)
-print(cell.coordinate)
+# print(cell.row)
+# print(cell.column)
+# print(cell.coordinate)
+
+# accessing cell with sheet.cell method with keyword args
+cell = sheet.cell(row=1, column=1)
+print(cell.value)
 
 
