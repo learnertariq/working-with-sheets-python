@@ -34,6 +34,11 @@ print(wb.sheetnames)
 
 # accessing a range of cells with sheet[] 
 # accessing all cells of a column
-columnA = sheet['a']
-for cell in columnA:
+# columnA = sheet['a']
+# for cell in columnA:
+#   print(cell.value)
+
+# accessing all cells of a row
+rowA = sheet['1']
+for cell in rowA:
   print(cell.value)
