@@ -27,9 +27,13 @@ print(wb.sheetnames)
 # print(cell.value)
 
 # iterating over all rows and columns
-for row in range(1, sheet.max_row +1):
-  for column in range(1, sheet.max_column +1):
-    cell = sheet.cell(row, column)
-    print(cell.value)
+# for row in range(1, sheet.max_row +1):
+#   for column in range(1, sheet.max_column +1):
+#     cell = sheet.cell(row, column)
+#     print(cell.value)
 
-
+# accessing a range of cells with sheet[] 
+# accessing all cells of a column
+columnA = sheet['a']
+for cell in columnA:
+  print(cell.value)
