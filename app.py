@@ -23,7 +23,13 @@ print(wb.sheetnames)
 # print(cell.coordinate)
 
 # accessing cell with sheet.cell method with keyword args
-cell = sheet.cell(row=1, column=1)
-print(cell.value)
+# cell = sheet.cell(row=1, column=1)
+# print(cell.value)
+
+# iterating over all rows and columns
+for row in range(1, sheet.max_row +1):
+  for column in range(1, sheet.max_column +1):
+    cell = sheet.cell(row, column)
+    print(cell.value)
 
 
