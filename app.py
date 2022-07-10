@@ -50,9 +50,19 @@ print(wb.sheetnames)
 # print(cellsByRow)
 
 # accessing all cells from row a to row 4
-# cellsByRow = sheet['1:4']
+# cellsByRow = sheet['1:4'] # or sheet[1:4] # without quotes
 # print(cellsByRow)
 
 # accessing all cells from one cordinate to another cordinate
-cellsByRow = sheet['a1:c3']
-print(cellsByRow)
+# cellsByRow = sheet['a1:c3']
+# print(cellsByRow)
+
+
+# Some useful method of sheet object
+# Adding a row with append method
+sheet.append([1,2,3])
+# Inserting empty rows at the given index
+sheet.insert_rows(idx=1, amount=1)
+
+
+wb.save('transactions.xlsx')
