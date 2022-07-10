@@ -60,9 +60,13 @@ print(wb.sheetnames)
 
 # Some useful method of sheet object
 # Adding a row with append method
-sheet.append([1,2,3])
+# sheet.append([1,2,3])
+
 # Inserting empty rows at the given index
-sheet.insert_rows(idx=1, amount=1)
+# sheet.insert_rows(idx=1, amount=1)
+
+# moving a range of cells
+sheet.move_range(cell_range="A2:C5", rows=-1, cols=0)
 
 
 wb.save('transactions.xlsx')
