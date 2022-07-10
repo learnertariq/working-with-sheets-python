@@ -46,8 +46,13 @@ print(wb.sheetnames)
 
 # accessing a specific range of cells
 # accessing all cells from column A to column C
-cellsByRow = sheet['A:C']
-print(cellsByRow)
+# cellsByRow = sheet['A:C']
+# print(cellsByRow)
+
 # accessing all cells from row a to row 4
-cellsByRow = sheet['1:4']
+# cellsByRow = sheet['1:4']
+# print(cellsByRow)
+
+# accessing all cells from one cordinate to another cordinate
+cellsByRow = sheet['a1:c3']
 print(cellsByRow)
