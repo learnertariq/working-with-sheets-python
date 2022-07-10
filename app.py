@@ -39,6 +39,15 @@ print(wb.sheetnames)
 #   print(cell.value)
 
 # accessing all cells of a row
-rowA = sheet['1']
-for cell in rowA:
-  print(cell.value)
+# rowA = sheet['1']
+# for cell in rowA:
+#   print(cell.value)
+
+
+# accessing a specific range of cells
+# accessing all cells from column A to column C
+cellsByRow = sheet['A:C']
+print(cellsByRow)
+# accessing all cells from row a to row 4
+cellsByRow = sheet['1:4']
+print(cellsByRow)
