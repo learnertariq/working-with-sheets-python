@@ -4,7 +4,10 @@ wb = openpyxl.load_workbook("transactions.xlsx")
 # for printing sheet names
 # print(wb.sheetnames)
 
-sheet = wb['Sheet1']
+# selecting a sheet
+# sheet = wb['Sheet1']
+# getting the active sheet
+sheet = wb.active
 
 # creating and removing worksheets with index
 # wb.create_sheet('Sheet2', 0)
@@ -66,7 +69,7 @@ print(wb.sheetnames)
 # sheet.insert_rows(idx=1, amount=1)
 
 # moving a range of cells
-sheet.move_range(cell_range="A2:C5", rows=-1, cols=0)
+# sheet.move_range(cell_range="A2:C5", rows=-1, cols=0)
 
 
 wb.save('transactions.xlsx')
