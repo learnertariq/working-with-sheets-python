@@ -15,7 +15,11 @@ print(wb.sheetnames)
 # passing coordinate of a cell
 cell = sheet['A1'] 
 # changing the value of a cell
-cell.value = "id"
+# cell.value = "id"
 print(cell.value)
+# printing row, column and coordinate info
+print(cell.row)
+print(cell.column)
+print(cell.coordinate)
 
 
